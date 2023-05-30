@@ -1,0 +1,101 @@
+/* Mobile version */
+
+body, html {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Header section */
+
+header {
+    background-color: rgb(228, 62, 33);
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    height: 10vh;
+    width: 100%;
+}
+
+header > svg {
+    padding-right: 1rem;
+}
+
+header a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+h1, h2, h3, nav {
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+h2, h3 {
+    color: rgb(228, 62, 33);
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.3rem;
+    margin-left: 1rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin: 1rem;
+}
+
+h3 {
+    font-size: 1.1rem;
+    margin: 0.8em;
+}
+
+/* Navbar */
+
+header > nav {
+    background-color: rgb(228, 62, 33);
+    position: absolute;
+    top: 10vh;
+    width: 100%;
+}
+header nav ul li {
+    list-style-type: none;
+    padding: 0.5rem;
+}
+
+/* Main section */
+
+main > section > img {
+    width: 100%;
+}
+
+p, main section a {
+    font-family: 'Oxygen', 'sans-serif';
+}
+
+p {
+    padding: 0.8rem;
+    line-height: 1.4rem;
+    font-size: 1rem;
+}
+
+main section article {
+    margin-bottom: 6rem;
+}
+
+main section a {
+    background-color: transparent;
+    border: 2px solid rgb(228, 62, 33);
+    color: rgb(228, 62, 33);
+    text-decoration: none;
+    padding: 0.8rem;
+    margin-top: 3.4rem; /* Bug sur cette ligne */
+    margin-left: 0.8rem;
+}
+
+/* Desktop version */ 
