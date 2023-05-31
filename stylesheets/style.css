@@ -70,11 +70,15 @@ header nav ul li {
 
 /* Main section */
 
-main > section > img {
+main.container {
+    margin-top: 10vh;
+}
+
+main > section > img, main > section > article > img {
     width: 100%;
 }
 
-p, main section a {
+p, main section a, li.p-li-items {
     font-family: 'Oxygen', 'sans-serif';
 }
 
@@ -82,6 +86,12 @@ p {
     padding: 0.8rem;
     line-height: 1.4rem;
     font-size: 1rem;
+}
+
+li.p-li-items {
+    line-height: 1.4rem;
+    list-style-type: circle;
+    padding: 0.2rem;
 }
 
 main section article {
@@ -94,7 +104,7 @@ main section a {
     color: rgb(228, 62, 33);
     text-decoration: none;
     padding: 0.8rem;
-    margin-top: 3.4rem; /* Bug sur cette ligne */
+    /*margin-top: 3.4rem;*/ /* Bug sur cette ligne */
     margin-left: 0.8rem;
 }
 
