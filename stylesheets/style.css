@@ -1,4 +1,4 @@
-/* Mobile version */
+/* ------- Mobile version ------- */
 
 body, html {
     margin: 0 auto;
@@ -22,7 +22,7 @@ header {
     width: 100%;
 }
 
-header > svg {
+header > i {
     padding-right: 1rem;
 }
 
@@ -98,14 +98,47 @@ main section article {
     margin-bottom: 6rem;
 }
 
-main section a {
+main section article a {
     background-color: transparent;
     border: 2px solid rgb(228, 62, 33);
     color: rgb(228, 62, 33);
     text-decoration: none;
     padding: 0.8rem;
-    /*margin-top: 3.4rem;*/ /* Bug sur cette ligne */
     margin-left: 0.8rem;
 }
 
-/* Desktop version */ 
+/* ------- Desktop version ------- */ 
+
+@media screen and (min-width: 800px) {
+
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header nav ul {
+        border: 1px solid black;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    
+    header nav ul li {
+        font-size: 1.1rem;
+        list-style-type: none;
+        padding: 0.8rem;
+    }
+
+    main section article p, li.p-li-items {
+        font-size: 1.1rem;
+        line-height: 1.6rem;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    main section article a {
+        margin: 0.8rem auto;
+    }
+}
