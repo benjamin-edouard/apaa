@@ -2,7 +2,6 @@ document.getElementById('main-menu').style.display = 'none';
 document.getElementById('menu-icon').addEventListener('click', displayMenu);
 
 function displayMenu() {
-    console.log('Hello');
     let mainMenu = document.getElementById('main-menu');
 
     if(mainMenu.style.display === 'none') {
