@@ -31,6 +31,18 @@ header a {
     text-decoration: none;
 }
 
+header > nav {
+    background-color: rgb(228, 62, 33);
+    position: absolute;
+    top: 10vh;
+    width: 100%;
+}
+
+header nav ul li {
+    list-style-type: none;
+    padding: 0.5rem;
+}
+
 h1, h2, h3, nav {
     font-family: 'Montserrat', 'sans-serif';
 }
@@ -53,19 +65,6 @@ h2 {
 h3 {
     font-size: 1.1rem;
     margin: 0.8em;
-}
-
-/* Navbar */
-
-header > nav {
-    background-color: rgb(228, 62, 33);
-    position: absolute;
-    top: 10vh;
-    width: 100%;
-}
-header nav ul li {
-    list-style-type: none;
-    padding: 0.5rem;
 }
 
 /* Main section */
@@ -110,13 +109,6 @@ main section article a {
 /* ------- Desktop version ------- */ 
 
 @media screen and (min-width: 800px) {
-
-    header {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
 
     header nav ul {
         display: flex;
