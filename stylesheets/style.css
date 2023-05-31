@@ -110,6 +110,10 @@ main section article a {
 
 @media screen and (min-width: 800px) {
 
+    header i {
+        display: none;
+    }
+
     header nav ul {
         display: flex;
         flex-direction: row;
