@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
     <!-- Option 1: Include in HTML -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="stylesheets/fonts.css">
@@ -21,7 +20,7 @@
         <h1>
             <a href="index.html" title="Page d'accueil">APAA</a>
         </h1>
-        <i class="bi bi-three-dots-vertical" id="menu-icon"></i>
+        <img src="images/three-dots-vertical.png" id="menu-icon">
         <nav id="main-menu">
             <ul>
                 <li><a href="index.html">Accueil</a></li>
@@ -38,29 +37,25 @@
     <main class="container">
         <section>
             <form>
-                <div class="form-group">
-                    <small id="emailHelp" class="form-text text-muted">Toutes ces informations resteront
-                        confidentielles</small>
-                    <label for="user-email">Email</label>
-                    <input type="email" class="form-control" id="user-email" aria-describedby="emailHelp"
-                        placeholder="Votre adresse email">
+                <div class="mb-3">
+                    <div id="emailHelp" class="form-text">Toutes ces informations restent confidentielles</div>
+                    <label for="user-email" class="form-label">Votre addresse e-mail</label>
+                    <input type="email" class="form-control" id="user-email" aria-describedby="emailHelp" required>
+                </div>
+                <div class="mb-3">
+                    <label for="user-lastname" class="form-label">Votre nom</label>
+                    <input type="text" class="form-control" id="user-lastname" required>
+                </div>
+                <div class="mb-3">
+                    <label for="user-firstname" class="form-label">Votre prénom</label>
+                    <input type="text" class="form-control" id="user-firstname" required>
                 </div>
 
-                <div class="form-group">
-                    <label for="user-lastname">Nom</label>
-                    <input type="password" class="form-control" id="user-lastname" placeholder="Votre nom">
+                <div class="mb-3">
+                    <label for="user-message" class="form-label">Votre message</label>
+                    <textarea class="form-control" rows="3" id="user-message" required></textarea>
                 </div>
-
-                <div class="form-group">
-                    <label for="user-firstname">Prénom</label>
-                    <input type="password" class="form-control" id="user-firstname" placeholder="Votre prénom">
-                </div>
-
-                <div class="form-group">
-                    <label for="user-message">Votre message</label>
-                    <textarea class="form-control" id="user-message" rows="3" placeholder="Votre message"></textarea>
-                </div>
-
+                
                 <button type="submit" class="btn btn-primary">Envoyer</button>
             </form>
         </section>
