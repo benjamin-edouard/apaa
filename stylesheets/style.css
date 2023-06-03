@@ -70,18 +70,24 @@ h3 {
 /* Main section */
 
 main.container {
+    /* Pour ne pas que le haut de ce block soit caché par le header*/
     margin-top: 10vh;
 }
 
-main > section > img, main > section > article > img {
+main > section > img, 
+main > section > article > img {
     width: 100%;
 }
 
-p, main section a, li.p-li-items {
+p, 
+main section a, 
+li.p-li-items {
     font-family: 'Oxygen', 'sans-serif';
 }
 
 p {
+    display: flex;
+    flex-direction: column;
     padding: 0.8rem;
     line-height: 1.4rem;
     font-size: 1rem;
@@ -104,6 +110,8 @@ main section article a {
     text-decoration: none;
     padding: 0.8rem;
     margin-left: 0.8rem;
+    margin-top: 2rem;
+    width: fit-content;
 }
 
 /* ------- Desktop version ------- */ 
@@ -118,22 +126,36 @@ main section article a {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
+        margin-right: 2rem;
     }
     
     header nav ul li {
-        font-size: 1.1rem;
+        font-size: 1.4rem;
         list-style-type: none;
-        padding: 0.8rem;
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin-left: 2rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 2rem;
     }
 
     main section article p, li.p-li-items {
-        font-size: 1.1rem;
-        line-height: 1.6rem;
+        font-size: 1.3rem;
+        line-height: 1.8rem;
         max-width: 700px;
         margin: 0 auto;
     }
 
     main section article a {
-        margin: 0.8rem auto;
+        cursor: pointer;
     }
 }
