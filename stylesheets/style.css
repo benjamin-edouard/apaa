@@ -22,13 +22,13 @@ header {
     width: 100%;
 }
 
-header > i {
-    padding-right: 1rem;
-}
-
 header a {
     color: rgb(255, 255, 255);
     text-decoration: none;
+}
+
+header > img {
+    margin-right: 1rem;
 }
 
 header > nav {
@@ -118,15 +118,16 @@ main section article a {
 
 @media screen and (min-width: 800px) {
 
-    header i {
+    header img {
         display: none;
     }
 
     header nav ul {
+        border: 1px solid white;
         display: flex;
         flex-direction: row;
-        justify-content: flex-end;
         margin-right: 2rem;
+        width: fit-content;
     }
     
     header nav ul li {
@@ -136,6 +137,7 @@ main section article a {
     }
 
     h1 {
+        border: 1px solid white;
         font-size: 3rem;
         margin-left: 2rem;
     }
