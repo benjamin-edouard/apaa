@@ -34,6 +34,7 @@ header > img {
 header > nav {
     background-color: rgb(228, 62, 33);
     position: absolute;
+    display:none;
     top: 10vh;
     width: 100%;
 }
@@ -53,17 +54,17 @@ h2, h3 {
 }
 
 h1 {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     margin-left: 1rem;
 }
 
 h2 {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     margin: 1rem;
 }
 
 h3 {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     margin: 0.8em;
 }
 
@@ -104,12 +105,12 @@ main section article {
     margin-bottom: 6rem;
 }
 
-main section article a {
+main section article p a {
     background-color: transparent;
     border: 2px solid rgb(228, 62, 33);
     color: rgb(228, 62, 33);
     text-decoration: none;
-    padding: 0.8rem;
+    padding: 1rem;
     margin-left: 0.8rem;
     margin-top: 2rem;
     width: fit-content;
@@ -124,6 +125,7 @@ main section article a {
     }
 
     header nav {
+        display: block;
         position: unset; /* Unset the postion absolute of the mobile version */
         width: fit-content;
     }
@@ -138,7 +140,7 @@ main section article a {
     }
     
     header nav ul li {
-        font-size: 1.4rem;
+        font-size: 1.1rem;
         list-style-type: none;
         padding: 1rem;
     }
